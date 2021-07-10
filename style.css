@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/********Header Section*********/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 0 60px;
+}
+
+nav .logo img{
+    width: 65%;
+}
+
+nav .nav-menu a{
+    text-decoration: none;
+    margin: 15px;
+    color: #2d3436;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+.nav-menu a:hover{
+    border-bottom: 2px solid #f1c40f;
+}
+
+.banner-container{
+    display: flex;
+    padding: 30px 50px 0 50px;
+}
+
+.banner-intro{
+   margin-top: 150px;
+}
+
+.banner-intro h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.banner-intro p{
+    font-size: 18px;
+    color: #636e72;
+}
+
+.banner-image{
+    margin-left: 50px;
+}
+
+.banner-image img{
+    width: 85%;
+}
+
+.button{
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*************Smartphone & Laptop Section***********/
+
+.card-section{
+    margin: 30px 0;
+    padding: 30px 50px 0 50px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0 10px 20px gray;
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+/************Catagories Section*************/
+
+.catagories-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left{
+    display: flex;
+}
+
+.left-cata{
+    box-shadow: 0 10px 20px gray;
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    text-align: center;
+    margin: 70px 70px 0 0;
+}
+
+.left-cata h5{
+    margin: 0;
+}
+
+.right{
+    text-align: center;
+}
+
+.right-cata1{
+    box-shadow: 0 10px 20px gray;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-cata1 h5{
+    margin: 0;
+}
+
+.right-cata2{
+    box-shadow: 0 10px 20px gray;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-cata2 h5{
+    margin: 0;
+}
+
+.right img{
+    width: 70%;
+}
+
+/*************Footer Section*****************/
+
+footer p{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/**********Responsive by Media Query**********/
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-menu a{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-menu a:hover{
+        background-color: #f1c40f;
+        padding: 15px;
+    }
+
+    nav .logo{
+        text-align: center;
+    }
+
+    nav .logo img{
+        width: 30%;
+    }
+
+    .banner-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .banner-intro{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .banner-intro h1{
+        font-size: 26px;
+    }
+
+    .banner-intro p{
+        width: 350px;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .banner-image{
+        margin: 0;
+    }
+
+    .banner-image img{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+    }
+
+    .left-cata{
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .left{
+        flex-direction: column;
+    }
+
+    .right-cata1{
+        width: 100%;
+        padding: 30px;
+    }
+    .right-cata2{
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    nav{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-menu a{
+        display: block;
+        width: 60%;
+    }
+
+    .nav-menu a:hover{
+        background-color: #f1c40f;
+        padding: 15px;
+    }
+
+    nav .logo{
+        text-align: center;
+    }
+
+    nav .logo img{
+        width: 30%;
+    }
+
+    .banner-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .banner-intro{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .banner-intro h1{
+        font-size: 26px;
+    }
+
+    .banner-intro p{
+        width: 250px;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .banner-image{
+        margin: 0;
+    }
+
+    .banner-image img{
+        width: 70%;
+    }
+    .card{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+    }
+
+    .left-cata{
+        width: 60%;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .left{
+        flex-direction: column;
+    }
+
+    .right-cata1{
+        width: 60%;
+        padding: 30px;
+    }
+    .right-cata2{
+        width: 60%;
+        padding: 30px;
+    }
+}
